@@ -41,6 +41,9 @@ class App < Sinatra::Base
     if params[:operation] == "subtract"
       resp.write "#{params[:number1] - params[:number2]}"
     end
+    if params[:operation] == "multiply"
+      resp.write "#{params[:number1] * params[:number2]}"
+    end
     
   end
 
