@@ -11,7 +11,7 @@ class App < Sinatra::Base
   
   get '/square/:number' do
     resp = Rack::Response.new
-    square = params[:number].to_i ** params[:number].to_i
+    square = params[:number].to_i ** 2
     resp.write "#{square}"
     resp.finish
   end
