@@ -15,5 +15,9 @@ class App < Sinatra::Base
     resp.write "#{square}"
     resp.finish
   end
+  
+  get '/say/:number/:phrase' do
+    
+  end
 
 end
