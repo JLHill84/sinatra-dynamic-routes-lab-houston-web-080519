@@ -37,6 +37,10 @@ class App < Sinatra::Base
     resp = Rack::Response.new
     if params[:operation] == "add"
       resp.write "#{params[:number1] + params[:number2]}"
+    end
+    if params[:operation] == "subtract"
+      resp.write "#{params[:number1] - params[:number2]}"
+    end
     
   end
 
