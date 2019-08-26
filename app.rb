@@ -31,7 +31,6 @@ class App < Sinatra::Base
     cat = "#{params[:word1]} #{params[:word2]} #{params[:word3]} #{params[:word4]} #{params[:word5]}"
     resp.write "#{cat}."
     resp.finish
-    
   end
   
   get '/:operation/:number1/:number2' do
