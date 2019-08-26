@@ -22,6 +22,7 @@ class App < Sinatra::Base
     x.times do
       resp.write "#{params[:phrase]}"
     end
+    resp.finish
      
   end
   
