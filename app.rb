@@ -9,9 +9,11 @@ class App < Sinatra::Base
     resp.finish
   end
   
-  get '/square/:number'
+  get '/square/:number' do
   resp = Rack::Response.new
   square = params[:name].to_i ** params[:name].to_i
   resp.write "#{square}"
+  resp.finish
+end
 
 end
