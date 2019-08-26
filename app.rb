@@ -42,7 +42,7 @@ class App < Sinatra::Base
     elsif params[:operation] == "multiply"
       resp.write "#{params[:number1].to_i * params[:number2].to_i}"
     elsif params[:operation] == "divide"
-      resp.write "#{params[:number1].to_i / params[:number2]}"
+      resp.write "#{params[:number1].to_i / params[:number2].to_i}"
     end
     
   end
