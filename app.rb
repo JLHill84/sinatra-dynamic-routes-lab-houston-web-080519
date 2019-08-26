@@ -37,14 +37,11 @@ class App < Sinatra::Base
     resp = Rack::Response.new
     if params[:operation] == "add"
       resp.write "#{params[:number1].to_i + params[:number2].to_i}"
-    end
-    if params[:operation] == "subtract"
+    elsif params[:operation] == "subtract"
       resp.write "#{params[:number1].to_i - params[:number2].to_i}"
-    end
-    if params[:operation] == "multiply"
+    elsif params[:operation] == "multiply"
       resp.write "#{params[:number1].to_i * params[:number2].to_i}"
-    end
-    if params[:operation] == "divide"
+    elsif params[:operation] == "divide"
       resp.write "#{params[:number1].to_i / params[:number2]}"
     end
     
