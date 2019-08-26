@@ -17,7 +17,8 @@ class App < Sinatra::Base
   end
   
   get '/say/:number/:phrase' do
-    
+     resp = Rack::Response.new
+     
   end
 
 end
