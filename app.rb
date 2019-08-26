@@ -8,5 +8,7 @@ class App < Sinatra::Base
     resp.write "#{backwards}"
     resp.finish
   end
+  
+  get '/'
 
 end
