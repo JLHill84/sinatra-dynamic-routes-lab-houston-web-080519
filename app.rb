@@ -45,7 +45,7 @@ class App < Sinatra::Base
       resp.write "#{params[:number1].to_i * params[:number2].to_i}"
     end
     if params[:operation] == "divide"
-      resp.write "#{params[:number1].to_i / params[:number2].to_i}"
+      resp.write "#{params[:number1].to_i / params[:number2]}"
     end
     
   end
