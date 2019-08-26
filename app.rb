@@ -35,7 +35,8 @@ class App < Sinatra::Base
   
   get '/:operation/:number1/:number2' do
     resp = Rack::Response.new
-    
+    if params[:operation] == "add"
+      resp.write "#{params[:number1] + params[:number2]}"
     
   end
 
