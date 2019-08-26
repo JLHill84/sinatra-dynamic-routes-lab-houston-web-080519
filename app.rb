@@ -17,13 +17,13 @@ class App < Sinatra::Base
   end
   
   get '/say/:number/:phrase' do
-     resp = Rack::Response.new
+    resp = Rack::Response.new
      
   end
   
   get '/say/:word1/:word2/:word3/:word4/:word5' do
-       resp = Rack::Response.new
-       cat
+    resp = Rack::Response.new
+    cat
     
   end
   
