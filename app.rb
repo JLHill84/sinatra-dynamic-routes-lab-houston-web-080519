@@ -18,7 +18,8 @@ class App < Sinatra::Base
   
   get '/say/:number/:phrase' do
     resp = Rack::Response.new
-    params[:number].to_i.times do
+    x = params[:number].to_i
+    x.times do
       resp.write "#{params[:phrase]}"
     end
      
