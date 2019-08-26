@@ -30,6 +30,7 @@ class App < Sinatra::Base
     resp = Rack::Response.new
     cat = "#{params[:word1]} #{params[:word2]} #{params[:word3]} #{params[:word4]} #{params[:word5]}"
     resp.write "#{cat}."
+    resp.finish
     
   end
   
