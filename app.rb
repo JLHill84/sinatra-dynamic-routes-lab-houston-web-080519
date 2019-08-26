@@ -6,6 +6,7 @@ class App < Sinatra::Base
     resp = Rack::Response.new
     backwards = params[:name].reverse
     resp.write "#{backwards}"
+    resp.finish
   end
 
 end
